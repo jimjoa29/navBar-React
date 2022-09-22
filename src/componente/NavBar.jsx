@@ -19,11 +19,11 @@ function NavBar() {
       <NavContainer>
         <h2>NavBar <span>Responsive</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
-          <a href="/">Home</a>
-          <a href="/">Shop</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Blog</a>
+          <a onClick={handleClick} href="#h">Home</a>
+          <a onClick={handleClick} href="#h">Shop</a>
+          <a onClick={handleClick} href="#h">About</a>
+          <a onClick={handleClick} href="#h">Contact</a>
+          <a onClick={handleClick} href="#h">Blog</a>
         </div>
         <div className="burguer">
           <BurguerButton clicked={clicked} handleClick={handleClick}/>
